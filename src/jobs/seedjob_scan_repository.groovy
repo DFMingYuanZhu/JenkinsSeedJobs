@@ -1,4 +1,4 @@
-multibranchPiplineJob('fc-adm-ci') {
+multibranchPipelineJob('fc-adm-ci') {
     branchSources {
         git {
             id('fc-adm-ci')
