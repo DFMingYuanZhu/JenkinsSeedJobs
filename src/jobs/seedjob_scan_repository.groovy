@@ -14,7 +14,7 @@ multibranchPipelineJob('fc-adm-ci') {
     }
 
     configure {
-        it / 'trigger' << 'com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger' {
+        it / 'triggers' << 'com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger' {
             spec '* * * * *'
             interval '6000'
         }
