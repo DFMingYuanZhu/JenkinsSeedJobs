@@ -7,7 +7,7 @@ multibranchPipelineJob('fc-adm-ci') {
         }
     }
 
-    orphaneItemStrategy {
+    orphanedItemStrategy {
         discardOldItems {
             numToKeep(20)
         }
