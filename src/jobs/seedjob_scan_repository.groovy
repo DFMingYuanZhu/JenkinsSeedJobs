@@ -1,4 +1,4 @@
-multibranchPipline('fc-adm-ci') {
+multibranchPiplineJob('fc-adm-ci') {
     branchSources {
         git {
             id('fc-adm-ci')
@@ -16,7 +16,7 @@ multibranchPipline('fc-adm-ci') {
     configure {
         it / 'trigger' << 'com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger' {
             spec '* * * * *'
-            interval '60000'
+            interval '6000'
         }
     }
 }
